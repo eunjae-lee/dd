@@ -21,7 +21,9 @@
     "test:locally": "yarn lint && yarn test:types && yarn test:unit",
     "test:types": "yarn tsc",
     "test:unit": "jest --verbose --updateSnapshot",
-    "update": "rm -rf node_modules && rm -f yarn.lock && yarn install"
+    "update": "rm -rf node_modules && rm -f yarn.lock && yarn install",
+    "release:prepare": "shipjs prepare",
+    "release:trigger": "shipjs trigger"
   },
   "husky": {
     "hooks": {
@@ -61,6 +63,7 @@
     "rollup-plugin-ignore": "^1.0.5",
     "rollup-plugin-node-globals": "^1.4.0",
     "rollup-plugin-typescript2": "^0.25.2",
+    "shipjs": "0.13.1",
     "sort-package-json": "^1.23.1",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.3.0",
